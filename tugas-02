@@ -1,0 +1,35 @@
+#include<stdio.h> 
+2 main() 
+3 { 
+4 float a,b,c,D,x,x1,x2; 
+5 printf("Program Mencari Akar Persamaan Kuadrat\n"); 
+6 printf("Bentuk Persamaan ax^2 + bx + c = 0\n"); 
+7 printf("-------------------------------------------- \n"); 
+8 printf(" Masukan Nilai Koefisien a = ");scanf("%f",&a); 
+9 printf(" Masukan Nilai Koefisien b = ");scanf("%f",&b); 
+10 printf(" Masukan Nilai Koefisien c = ");scanf("%f",&c); 
+11 printf("-------------------------------------------- \n"); 
+12 
+ 
+13 D = (b*b)-(4*a*c); 
+14 printf(" Diskriminan = %2.2f\n",D); 
+15 printf("-------------------------------------------- \n"); 
+16 if (D>0) 
+17         {x1=((-b+sqrt(D))/(2*a)); 
+18                 printf(" x1 = %2.2f\n",x1); 
+19          x2=((-b-sqrt(D))/(2*a)); 
+20                 printf(" x2 = %2.2f\n",x2);} 
+21 else if(D==0) 
+22         {x= -b/(2*a); 
+23                 printf(" x1 = x2 = %2.2f\n",x);} 
+24 else if(D<0) 
+25         {x1=((-b/2*a)+ ((sqrt(-D))/2*a)); 
+26                 printf(" x1 = %2.2f\n",x1); 
+27          x2=((-b/2*a)-((sqrt(-D) )/2*a)); 
+28                 printf(" x2 = %2.2f\n",x2); 
+29                 printf(" Adalah Bilangan Imajiner \n");} 
+30 printf("--------------------------------------------\n"); 
+31 
+ 
+32 getch(); 
+33 } 
